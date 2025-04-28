@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Если запрашиваемый файл или директория НЕ существует
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Делаем редирект на /index.html с кодом 301
+RewriteRule ^.*$ /index.html [L,R=301]

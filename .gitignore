@@ -1,0 +1,13 @@
+# Временные файлы
+*.log
+*.tmp
+*.bak
+
+# Файлы и папки MacOS
+.DS_Store
+
+# Кэшированные файлы
+node_modules/
+.cache/
+.idea/
+local/
