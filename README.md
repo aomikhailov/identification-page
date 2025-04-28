@@ -10,7 +10,7 @@ Its main purpose is to provide basic server identification and minimal user inte
 ## Features:
 - Redirects all requests to `index.html` via `.htaccess`.
 - Displays the visitor’s IP address.
-- Animated "eye" element that follows the mouse cursor.
+- Animated 'eye' element that follows the mouse cursor and the movement of the mobile phone.
 - Minimalist design without external libraries.
 
 ## Additional Information:
