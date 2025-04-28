@@ -1,6 +1,6 @@
 {
   "name": "Тестовый сервер test.almidev.ru",
-  "short_name": "Тестовый сервер",
+  "short_name": "Test AD",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",

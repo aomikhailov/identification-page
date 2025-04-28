@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // Работа глазика
+    // Реакция глаза на курсор мыши
     const eye = document.querySelector('.eye');
     const pupil = document.querySelector('.pupil');
     const notObserving = document.querySelector('.not-observing');
@@ -34,6 +34,26 @@ document.addEventListener('DOMContentLoaded', () => {
         const radiusY = 2;
         pupil.style.left = 8 + radiusX * Math.cos(angle) + 'px';
         pupil.style.top = 4 + radiusY * Math.sin(angle) + 'px';
+    });
+
+    // Реакция глаза на наклон телефона
+    window.addEventListener('deviceorientation', (event) => {
+        if (isOverNotObserving) return;
+
+        const tiltX = event.beta;
+        const tiltY = event.gamma;
+
+        const clampedTiltX = Math.max(-30, Math.min(30, tiltX));
+        const clampedTiltY = Math.max(-30, Math.min(30, tiltY));
+
+        const radiusX = 5;
+        const radiusY = 2;
+
+        const offsetX = (clampedTiltY / 30) * radiusX;
+        const offsetY = (clampedTiltX / 30) * radiusY;
+
+        pupil.style.left = 8 - offsetX + 'px';
+        pupil.style.top = 4 - offsetY + 'px';
     });
 
     // Запрос IP
