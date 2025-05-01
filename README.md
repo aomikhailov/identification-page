@@ -1,6 +1,6 @@
 # Minimal Identification Page for Domains and IP Addresses
 
-[🇷🇺 Read in Russian](README.ru.md)
+<img src="https://flagcdn.com/w20/ru.png" alt="RU flag"> [Читать по-русски](README.ru.md)
 
 **Informational page for domains and servers without a full website.**
 
