@@ -27,8 +27,6 @@ Its main purpose is to provide basic server identification and minimal user inte
 - Use on test domains, temporary servers, or auxiliary addresses.
 - Demonstration of basic client-side interaction without server-side logic.
 
-## Live Example:
-- [https://test.almidev.ru/](https://test.almidev.ru/)
 
 ## License
 
